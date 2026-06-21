@@ -1,0 +1,14 @@
+{
+  "name": "textile-platform-root",
+  "version": "1.0.0",
+  "description": "Premium Textile Platform Monorepo Root",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix frontend && npm install --prefix server",
+    "build:frontend": "npm run build --prefix frontend",
+    "start": "node server/server.js",
+    "build": "npm run build:frontend",
+    "dev": "npm run dev --prefix frontend",
+    "dev:server": "npm run dev --prefix server"
+  }
+}
